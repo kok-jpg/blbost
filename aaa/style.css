@@ -7,7 +7,68 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: goldenrod;
+    color: black;
     background-color: blue;
     font-size: 3vh;
+}
+
+.site-header {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.25rem 0.6rem black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card {
+    background-color: lightpink;
+    padding: 1.8rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid beige;
+    box-shadow: 0 0.125rem 0.3rem black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    word-break: break-word; 
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 0.8rem;
+    border-bottom: 0.125rem solid violet;
+    padding-bottom: 0.4rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: blue;
+}
+
+.card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.8rem 1.2rem black;
+    background-color: yellow;
+    border-color: lightskyblue;
+}
+
+.card:hover h2 {
+    color: cyan;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+    background-color: darkmagenta;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    color: blueviolet;
 }
